@@ -28,8 +28,8 @@ const Hero = () => {
 
           {/* Tagline */}
           <p className="section-fade-in stagger-3 text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-            Senior UX Designer with 8+ years crafting user-centered experiences 
-            for fintech, healthcare, and enterprise products.
+            Senior UX Designer with 5+ years creating user-centered experiences for fintech, 
+            healthcare, and enterprise products — backed by a solid design background.
           </p>
 
           {/* CTAs */}
