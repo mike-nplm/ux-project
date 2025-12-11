@@ -61,7 +61,7 @@ const Header = () => {
             {/* Botón de Inglés */}
             <Link 
               to="/" 
-              className="ml-1 px-4 py-2 rounded-md bg-gray-100 hover:bg-gray-200 text-sm font-medium transition-colors"
+              className="px-4 py-2 rounded-md bg-gray-100 hover:bg-gray-200 text-sm font-medium transition-colors"
             >
               EN
             </Link>
