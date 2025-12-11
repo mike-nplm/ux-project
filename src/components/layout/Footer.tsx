@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Left side */}
           <div className="text-center md:text-left">
             <p className="font-display font-medium text-foreground">
-              Miguel Zúñiga
+              Mike Zúñiga
             </p>
             <p className="text-sm text-muted-foreground mt-1">
               Senior UX Designer · Mexico City
