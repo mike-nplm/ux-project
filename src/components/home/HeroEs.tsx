@@ -12,7 +12,7 @@ const HeroEs = () => {
       <div className="absolute inset-0 bg-[var(--hero-gradient)] -z-10" />
       
       <div className="container-portfolio">
-        <div className="max-w-4xl">
+        <div className="max-w-full">
           {/* Intro Label */}
           <div className="section-fade-in stagger-1">
             <span className="inline-block text-sm font-medium text-muted-foreground tracking-wide uppercase mb-6">
