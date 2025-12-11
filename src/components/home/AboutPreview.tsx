@@ -8,9 +8,10 @@ const AboutPreview = () => {
     "UX Strategy",
     "User Research", 
     "Interaction Design",
-    "Design Systems",
+    "Product Thinking",
     "Prototyping",
     "Usability Testing",
+    "Dashboard & Data Visualization",
   ];
 
   return (
@@ -42,14 +43,17 @@ const AboutPreview = () => {
             
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
               <p>
-                I'm a Senior UX Designer based in Mexico City with over 8 years of 
-                experience crafting digital products that balance business goals 
-                with genuine user needs.
+                I'm a Senior UX Designer based in Mexico City with deep experience 
+                shaping end-to-end product experiences for fintech, operations, 
+                and enterprise systems. With 5+ years in UX and a strong visual 
+                design foundation, I help teams turn complex workflows and data-heavy 
+                processes into intuitive, scalable products.
               </p>
               <p>
-                My approach combines strategic thinking with hands-on design execution. 
-                I thrive in ambiguous problem spaces where research and iteration 
-                lead to elegant solutions.
+                I’m passionate about transforming complexity into clarity. Whether 
+                defining product strategy, running research, or prototyping new 
+                experiences, I focus on building thoughtful, usable solutions 
+                that support both business and user goals.
               </p>
             </div>
 
