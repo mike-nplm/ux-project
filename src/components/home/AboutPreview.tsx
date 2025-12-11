@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import mikePortrait from "@/assets/mike-portrait.jpg";
+import mikePortrait from "@/assets/mike-portrait2.png";
 
 const AboutPreview = () => {
   const skills = [
