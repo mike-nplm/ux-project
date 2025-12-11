@@ -83,4 +83,4 @@ const AboutPreviewEs = () => {
   );
 };
 
-export default AboutPreview;
+export default AboutPreviewEs;
