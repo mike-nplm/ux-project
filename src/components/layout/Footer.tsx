@@ -2,8 +2,8 @@ import { Linkedin, Mail, FileText } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
-    { href: "https://linkedin.com/in/mikezuniga", icon: Linkedin, label: "LinkedIn" },
-    { href: "mailto:hello@mikezuniga.com", icon: Mail, label: "Email" },
+    { href: "https://www.linkedin.com/in/dg-miguel-zuniga", icon: Linkedin, label: "LinkedIn" },
+    { href: "mailto:mikexk8@gmail.com", icon: Mail, label: "Email" },
     { href: "/case-study-book.pdf", icon: FileText, label: "Download Resume" },
   ];
 
