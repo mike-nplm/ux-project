@@ -115,6 +115,7 @@ const CaseStudy = () => {
               </p>
             )}
           </div>
+          );
 
           case 'video':
       return (
