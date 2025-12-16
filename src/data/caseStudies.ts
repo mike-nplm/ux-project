@@ -51,7 +51,7 @@ export const caseStudies: CaseStudy[] = [
     role: "Lead UX Designer",
     team: "1 PM, 2 Devs, Stakeholders Nestlé",
     overview: "En Cuéntame, identificamos la necesidad de mejorar el acceso a servicios de bienestar emocional para empleados de plantas industriales (como Nestlé), quienes enfrentaban barreras tecnológicas y de privacidad.",
-    challenge: "Los datos mostraban una caída del 12% en usuarios activos (MAU). La plataforma web existente no era accesible para operarios sin computadora propia ni espacios privados.",
+    challenge: "Los datos mostraban una caída del 12% en usuarios activos (MAU) flechita. La plataforma web existente no era accesible para operarios sin computadora propia ni espacios privados.",
     sections: [
       {
         title: "El Problema y Contexto",
