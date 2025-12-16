@@ -2,13 +2,13 @@ import caseFintechImg from "@/assets/case-fintech.jpg";
 import caseAiDashboardImg from "@/assets/case-ai-dashboard.jpg";
 import caseHealthcareImg from "@/assets/case-healthcare.jpg";
 import caseEcommerceImg from "@/assets/case-ecommerce.jpg";
-import cuentameHero from "@/assets/cuentame-hero.jpg"; // Tu imagen principal
+import cuentameHero from "@/assets/cuentame-hero.jpg";
 import cuentamePersona from "@/assets/cuentame-persona.png";
 import cuentameFlow from "@/assets/cuentame-flow.jpg";
 import cuentameUi from "@/assets/cuentame-ui.png";
 import idHero from "@/assets/id-hero.png";
-import idFlow from "@/assets/id-flow.jpg"; // o .png
-import idDemo from "@/assets/id-demo.gif"; // ¡Los GIFs se importan igual!
+import idFlow from "@/assets/id-flow.jpg";
+import idDemo from "@/assets/id-demo.gif";
 
 export interface CaseStudy {
   id: string;
