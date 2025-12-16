@@ -144,7 +144,6 @@ const CaseStudy = () => {
           )}
         </div>
       );
-        );
 
       default:
         return (
