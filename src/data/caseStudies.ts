@@ -29,6 +29,7 @@ export interface CaseStudySection {
   type: 'text-image' | 'image-text' | 'full-image' | 'text-only' | 'gallery';
   content: string;
   image?: string;
+  videoUrl?: string;
   images?: string[];
   caption?: string;
 }
