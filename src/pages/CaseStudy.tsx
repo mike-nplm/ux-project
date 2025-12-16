@@ -115,6 +115,34 @@ const CaseStudy = () => {
               </p>
             )}
           </div>
+
+          case 'video':
+      return (
+        <div key={index} className="w-full max-w-4xl mx-auto my-12 px-4">
+          <h3 className="font-display text-2xl md:text-3xl font-semibold mb-4">
+            {section.title}
+          </h3>
+          {/* Usamos esto para permitir negritas y listas en el texto */}
+          <div 
+            className="text-muted-foreground leading-relaxed mb-8 whitespace-pre-line"
+            dangerouslySetInnerHTML={{ __html: section.content }} 
+          />
+          
+          <div className="relative pt-[56.25%] bg-black rounded-xl overflow-hidden shadow-lg border border-gray-100">
+            <iframe 
+              src={section.videoUrl} 
+              className="absolute top-0 left-0 w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            ></iframe>
+          </div>
+          {section.caption && (
+            <p className="text-center text-sm text-muted-foreground mt-3 italic">
+              {section.caption}
+            </p>
+          )}
+        </div>
+      );
         );
 
       default:
