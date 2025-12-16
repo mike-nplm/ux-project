@@ -6,6 +6,9 @@ import cuentameHero from "@/assets/cuentame-hero.jpg"; // Tu imagen principal
 import cuentamePersona from "@/assets/cuentame-persona.png";
 import cuentameFlow from "@/assets/cuentame-flow.jpg";
 import cuentameUi from "@/assets/cuentame-ui.png";
+import idHero from "@/assets/id-hero.png";
+import idFlow from "@/assets/id-flow.jpg"; // o .png
+import idDemo from "@/assets/id-demo.gif"; // ¡Los GIFs se importan igual!
 
 export interface CaseStudy {
   id: string;
@@ -85,6 +88,80 @@ export const caseStudies: CaseStudy[] = [
       "La tecnología debe adaptarse al contexto físico del usuario (planta vs oficina)",
       "La privacidad es el factor #1 en productos de salud mental",
       "Las soluciones híbridas (físico + digital) generan mayor confianza"
+    ]
+  },
+  {
+    id: "validacion-id",
+    title: "Deep Dive: Validación de Identidad",
+    tagline: "Optimizando la conversión y seguridad en el onboarding digital",
+    category: "Fintech / Security",
+    thumbnail: idHero,
+    heroImage: idHero,
+    duration: "4 semanas",
+    role: "Product Designer",
+    team: "1 PM, 2 Devs, Equipo de Compliance",
+    
+    overview: "Este 'Deep Dive' se enfoca en una pieza crítica del ecosistema: el momento en que un usuario debe verificar su identidad para abrir una cuenta. El reto era equilibrar la estricta seguridad bancaria con una experiencia de usuario sin fricción.",
+    
+    challenge: "La tasa de abandono en el paso de 'Scan ID' era del 45%. Los usuarios encontraban el proceso intrusivo, lento y propenso a errores técnicos (cámara no enfoca, rechazos sin explicación).",
+
+    sections: [
+      // SECCIÓN 1: VIDEO DEL PROTOTIPO (Usando tu nueva función)
+      {
+        title: "Prototipo de Alta Fidelidad",
+        type: "video",
+        content: "Diseñamos una experiencia guiada con retroalimentación en tiempo real. Este video muestra el 'Happy Path' donde el usuario completa la validación en menos de 40 segundos.",
+        // OJO: Si usas Youtube, asegúrate de usar la URL de 'embed'
+        // Si tienes el video en la carpeta public, usa: "/videos/mi-video.mp4"
+        videoUrl: "https://www.youtube.com/embed/TU_ID_DE_VIDEO", 
+        caption: "Navegación del prototipo final en iOS"
+      },
+
+      // SECCIÓN 2: LISTAS Y NEGRITAS (Formato Rico)
+      {
+        title: "Hallazgos de Investigación",
+        type: "text-only",
+        // Aquí usamos HTML para replicar el estilo de Google Sites
+        content: `
+          Analizamos 50 grabaciones de sesiones y encontramos 3 patrones de error:
+          <br/><br/>
+          <ul class="list-disc pl-5 space-y-2">
+            <li><b>Falta de luz:</b> El 30% de los fallos eran por iluminación pobre, pero la app no avisaba al usuario.</li>
+            <li><b>Instrucciones confusas:</b> El texto "Coloque su ID" no especificaba si era el frente o el reverso.</li>
+            <li><b>Miedo a la Biometría:</b> Los usuarios dudaban al tener que escanear su rostro sin contexto previo.</li>
+          </ul>
+        `
+      },
+
+      // SECCIÓN 3: DIAGRAMA DE FLUJO
+      {
+        title: "Optimización del User Flow",
+        type: "full-image",
+        content: "Redujimos los pasos de 7 a 4. Eliminamos la carga manual de datos (OCR automático) y unificamos la pantalla de instrucciones.",
+        image: idFlow,
+        caption: "Comparativa: Flow Anterior vs. Flow Nuevo"
+      },
+
+      // SECCIÓN 4: USO DE GIF (Como imagen normal)
+      {
+        title: "Interacciones y Feedback",
+        type: "image-text",
+        content: "Para reducir la ansiedad, implementamos micro-interacciones que confirman el éxito de cada paso. El uso de haptics (vibración) y colores verdes genera una sensación de progreso constante.",
+        image: idDemo, // Aquí usamos el GIF importado
+        caption: "Animación de éxito al capturar el documento"
+      }
+    ],
+
+    results: [
+      { metric: "Conversión", value: "+22%", description: "Aumento en cuentas verificadas" },
+      { metric: "Tiempo", value: "-1.5m", description: "Reducción en tiempo de completado" },
+      { metric: "Errores", value: "-40%", description: "Menos tickets de soporte técnico" }
+    ],
+
+    learnings: [
+      "La seguridad no debe pelear con la usabilidad; la transparencia genera confianza.",
+      "El feedback de error debe ser específico ('Acércate a la luz') y no genérico ('Error 404').",
+      "Probar con dispositivos de gama baja es crucial para procesos de cámara intensivos."
     ]
   },
   {
