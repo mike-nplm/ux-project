@@ -2,6 +2,10 @@ import caseFintechImg from "@/assets/case-fintech.jpg";
 import caseAiDashboardImg from "@/assets/case-ai-dashboard.jpg";
 import caseHealthcareImg from "@/assets/case-healthcare.jpg";
 import caseEcommerceImg from "@/assets/case-ecommerce.jpg";
+import cuentameHero from "@/assets/cuentame-hero.jpg"; // Tu imagen principal
+import cuentamePersona from "@/assets/cuentame-persona.png";
+import cuentameFlow from "@/assets/cuentame-flow.jpg";
+import cuentameUi from "@/assets/cuentame-ui.png";
 
 export interface CaseStudy {
   id: string;
@@ -36,6 +40,52 @@ export interface Result {
 }
 
 export const caseStudies: CaseStudy[] = [
+  {
+    id: "cuentame-app", // Esta será tu url: /case-study/cuentame-app
+    title: "Cuéntame: Salud Mental",
+    tagline: "Mejorando el bienestar emocional de empleados a través de una app nativa",
+    category: "Healthcare / Wellness",
+    thumbnail: cuentameHero, // Usa la variable que importaste arriba
+    heroImage: cuentameHero,
+    duration: "4 meses",
+    role: "Lead UX Designer",
+    team: "1 PM, 2 Devs, Stakeholders Nestlé",
+    overview: "En Cuéntame, identificamos la necesidad de mejorar el acceso a servicios de bienestar emocional para empleados de plantas industriales (como Nestlé), quienes enfrentaban barreras tecnológicas y de privacidad.",
+    challenge: "Los datos mostraban una caída del 12% en usuarios activos (MAU). La plataforma web existente no era accesible para operarios sin computadora propia ni espacios privados.",
+    sections: [
+      {
+        title: "El Problema y Contexto",
+        type: "text-image",
+        content: "Realizamos entrevistas en vivo en las plantas y descubrimos que la barrera principal no era el interés, sino el acceso. Los empleados no tenían laptops corporativas y usar la web en móviles era incómodo.",
+        image: cuentamePersona,
+        caption: "Sesiones de investigación con operarios de planta"
+      },
+      {
+        title: "Ideación: La Cabina y la App",
+        type: "image-text",
+        content: "Diseñamos dos soluciones complementarias: una 'Cabina de Privacidad' física para las plantas y una Aplicación Móvil Nativa para facilitar el acceso a videos y videollamadas desde dispositivos personales.",
+        image: cuentameFlow,
+        caption: "User Flow de la nueva experiencia móvil"
+      },
+      {
+        title: "Solución Final",
+        type: "full-image",
+        content: "La app nativa simplificó el agendamiento de citas y el consumo de contenido de bienestar. Se priorizó una interfaz limpia y empática para reducir la ansiedad del usuario.",
+        image: cuentameUi,
+        caption: "Pantallas finales de la aplicación iOS/Android"
+      }
+    ],
+    results: [
+      { metric: "Retención", value: "+30%", description: "Reducción en la tasa de abandono" },
+      { metric: "Engagement", value: "↑ MAU", description: "Aumento significativo en usuarios activos" },
+      { metric: "Adopción", value: "Alta", description: "Feedback positivo en facilidad de uso" }
+    ],
+    learnings: [
+      "La tecnología debe adaptarse al contexto físico del usuario (planta vs oficina)",
+      "La privacidad es el factor #1 en productos de salud mental",
+      "Las soluciones híbridas (físico + digital) generan mayor confianza"
+    ]
+  },
   {
     id: "fintech-banking-app",
     title: "Reimagining Digital Banking",
